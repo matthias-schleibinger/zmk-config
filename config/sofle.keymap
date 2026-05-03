@@ -16,7 +16,6 @@
 #define ADJUST 3
 
 / {
-   /* 
     #include <dt-bindings/led/led.h>
 
     &pinctrl {
@@ -64,7 +63,6 @@
             zmk,underglow = &led_strip;
         };
     };
-    */
 
     /* END temporary RGB support section */
 
@@ -156,7 +154,6 @@
         };
 
     };
-    /*
     behaviors {
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
@@ -181,5 +178,4 @@
             hold-trigger-on-release;
         };
     };
-    */
 };

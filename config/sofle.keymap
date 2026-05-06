@@ -16,10 +16,6 @@
 #define RAISE 2
 #define ADJUST 3
 
-// &led_strip {
-//     chain-length = <30>;
-// };
-
 /*
  * Temporarily here because nice nano v2 spi is not defined on ZMK Yet
  * Source: https://github.com/zmkfirmware/zmk/blob/main/app/boards/shields/reviung41/boards/nice_nano.overlay
@@ -95,7 +91,7 @@
 / {
     chosen {
         zmk,underglow = &led_strip;
-        zmk,display = &oled;
+        zephyr,display = &oled;
     };
 };
 

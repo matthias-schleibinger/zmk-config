@@ -88,7 +88,7 @@
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;
         width = <128>;
-        height = <32>;
+        height = <64>;
         segment-offset = <0>;
         page-offset = <0>;
         display-offset = <0>;
@@ -132,17 +132,6 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-            //hold-trigger-key-positions = <>; // List of keys on the left side of the keyboard
-            hold-trigger-on-release;
-        };
-        hmr_uc: home_row_mod_right_wich_unicode {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            require-prior-idle-ms = <150>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            bindings = <&kp>, <&uc>;
             //hold-trigger-key-positions = <>; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
         };

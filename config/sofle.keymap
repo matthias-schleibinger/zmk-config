@@ -16,6 +16,8 @@
 // Allows access of Unicode glyphs by label
 #include <zmk-unicode/keys-extra.h>  // All glyphs except CJK
 
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
 #define BASE 0
 #define LOWER 1
 #define RAISE 2
@@ -88,7 +90,7 @@
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;
         width = <128>;
-        height = <64>;
+        height = <32>;
         segment-offset = <0>;
         page-offset = <0>;
         display-offset = <0>;
